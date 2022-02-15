@@ -6,9 +6,8 @@ export default class Controller {
   constructor(board) {
     this.board = board;
     this.newsId = new Set();
-    this.url =
-      "https://server-common-ahj.herokuapp.com/news/latest";
-     // "http://localhost:8080/news/latest";
+    this.url = "https://server-common-ahj.herokuapp.com/news/latest";
+    // "http://localhost:8080/news/latest";
   }
 
   init() {
@@ -36,6 +35,7 @@ export default class Controller {
       this.showErrorMessage();
     }
   }
+
   getValue(obj) {
     if (!obj.length) {
       return;

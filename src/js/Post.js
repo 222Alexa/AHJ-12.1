@@ -50,6 +50,7 @@ export default class Post {
     }
     return false;
   }
+
   getFormattedText(data) {
     const text = data.body.split("");
     if (text.length <= 170) {
